@@ -7,6 +7,9 @@
 
 
 
+
+
+
 def start(nice=0,mean=0,name=''):
     # get user name
     name = describe_game(name)
@@ -27,7 +30,7 @@ def describe_game(name):
     else:
         stop = True
         while stop:
-            if name == "";
+            if name == "":
                 name = input("\nWhat is your name? \n>>>").capitalize()
                 if name != "":
                     print("\nWelcome, {}!",format(name))
@@ -41,7 +44,21 @@ def describe_game(name):
 #===========================================================================
 
 
-def nice_mean():
+def nice_mean(nice,mean,name):
+    stop = True
+    while stop:
+        show_score(nice,mean,name)
+        pick = input("\nA stranger approaches you for a \ncoversation. Will you be nice \nor mean? (N/M) \n>>>")
+        if pick == "n":
+            print = ("\nThe stranger walks away smiling...")
+            nice = (nice + 1)
+            stop = False
+        if pick == "m":
+            print ("\nThe stranger glares at you \nmenacingly and storms off...")
+            mean = (mean + 1)
+            stop = False
+    score(nice,mean,name) # pass the 3 variables to the score{}
+
   
 
 
