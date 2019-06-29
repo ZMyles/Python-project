@@ -25,7 +25,7 @@ for data in fileList:
     if textFile == True:
          print(data)
 
-
+"""
 conn = sqlite3.connect('data-1.db')
 
 
@@ -36,7 +36,7 @@ with conn:
 
     conn.commit()
 conn.close()   
-
+"""
 
 
 
